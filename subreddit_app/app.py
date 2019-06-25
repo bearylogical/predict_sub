@@ -33,6 +33,5 @@ def get_post():
 
 # ----- MAIN SENTINEL -----#
 if __name__ == '__main__':
-    nltk.download('stopwords')
     mdl = load('../model/tfidf_lr.joblib')
     app.run()
