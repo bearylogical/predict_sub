@@ -1,5 +1,5 @@
 import flask
-from model import LemmaTokenizer, classify_text
+from .model import LemmaTokenizer, classify_text
 from joblib import load
 
 # ----- CONFIG -----#
