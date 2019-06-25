@@ -1,12 +1,12 @@
 import flask
 from subreddit_app.model import classify_text
 from joblib import load
-import nltk
+
 
 # ----- CONFIG -----#
 app = flask.Flask(__name__)  # initialise Flask app var
 app.config['DEBUG'] = False
-
+mdl = load('../model/tfidf_lr.joblib')
 
 # ----- ROUTES -----#
 @app.route("/", methods= ["GET", "POST"])
