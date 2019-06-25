@@ -1,6 +1,7 @@
 import flask
 from .model import LemmaTokenizer, classify_text
 from joblib import load
+import nltk
 
 # ----- CONFIG -----#
 app = flask.Flask(__name__)  # initialise Flask app var
@@ -32,5 +33,6 @@ def get_post():
 
 # ----- MAIN SENTINEL -----#
 if __name__ == '__main__':
+    nltk.download('stopwords')
     mdl = load('../model/tfidf_lr.joblib')
     app.run()

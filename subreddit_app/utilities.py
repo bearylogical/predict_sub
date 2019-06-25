@@ -1,7 +1,6 @@
 import regex as re
 from nltk.corpus import stopwords
 
-
 stops = set(stopwords.words('english'))
 
 
