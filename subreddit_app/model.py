@@ -1,6 +1,6 @@
 from nltk import word_tokenize
 from nltk.stem import WordNetLemmatizer
-from .utilities import clean_text
+from subreddit_app.utilities import clean_text
 
 
 class LemmaTokenizer(object):

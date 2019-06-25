@@ -1,11 +1,11 @@
 import flask
-from .model import LemmaTokenizer, classify_text
+from subreddit_app.model import classify_text
 from joblib import load
 import nltk
 
 # ----- CONFIG -----#
 app = flask.Flask(__name__)  # initialise Flask app var
-app.config['DEBUG'] = True
+app.config['DEBUG'] = False
 
 
 # ----- ROUTES -----#

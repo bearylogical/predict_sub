@@ -1,2 +1,2 @@
 
-web: gunicorn subreddit_app:app.py
+web: gunicorn --pythonpath subreddit_app app:app
